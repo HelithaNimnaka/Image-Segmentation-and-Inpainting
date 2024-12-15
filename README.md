@@ -35,7 +35,7 @@ You can use your mobile phone as a web camera via WiFi. Follow these steps:
 
 ## Pretrained Models
 
-For this project, the **YOLOv8-seg** pretrained model is used. Refer to the official documentation for more details: [Ultralytics Segmentation](https://docs.ultralytics.com/tasks/segment/).
+For this project, the **YOLO11n-seg** pretrained model is used. Refer to the official documentation for more details: [Ultralytics Segmentation](https://docs.ultralytics.com/tasks/segment/).
 
 ---
 
