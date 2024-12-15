@@ -1,6 +1,6 @@
 # Image-Segmentation-and-Inpainting
 
-This project focuses on **real-time human segmentation and inpainting**, designed to detect remove humans from video frames.
+This project focuses on **real-time human segmentation and inpainting**, designed to detect and remove humans from video frames.
 
 Instance segmentation goes beyond object detection by identifying individual objects in an image and segmenting them from the rest of the image. 
 
@@ -17,7 +17,8 @@ Instance segmentation is particularly useful when you need to understand not onl
 - [Setup Camera](#setup-camera)
 - [Pretrained Models](#pretrained-models)
 - [Installation](#installation)
-- [Real time segmentation](#realtime-segmentation)
+- [Real-Time Segmentation](#real-time-segmentation)
+- [Real-Time Inpainting for Humans](#real-time-inpainting-for-humans)
 
 ---
 
@@ -37,6 +38,19 @@ For this project, the **YOLO11n-seg** pretrained model is used. Refer to the off
 
 ---
 
-## Real time segmentation
+## Real-Time Segmentation
 
+The following demonstrates **real-time human segmentation**, where individuals in video frames are detected and their contours are identified.
+
+![Segmentation Output](images/Real_time_segmentation.gif "Segmentation Output")
+
+---
+
+## Real-Time Inpainting for Humans
+
+This section demonstrates **real-time inpainting**, where humans are detected in video frames and removed seamlessly.
+
+![Inpainting Example](images/Real_time_inpainting.gif "Inpainting Example")
+
+---
 
