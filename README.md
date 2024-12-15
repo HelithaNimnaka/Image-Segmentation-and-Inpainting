@@ -42,7 +42,7 @@ For this project, the **YOLO11n-seg** pretrained model is used. Refer to the off
 
 The following demonstrates **real-time human segmentation**, where individuals in video frames are detected and their contours are identified.
 
-![Segmentation Output](images/Real_time_segmentation.gif "Segmentation Output")
+![Segmentation Output](Images/Real_time_segmentation.gif "Segmentation Output")
 
 ---
 
