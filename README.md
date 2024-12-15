@@ -17,9 +17,7 @@ Instance segmentation is particularly useful when you need to understand not onl
 - [Setup Camera](#setup-camera)
 - [Pretrained Models](#pretrained-models)
 - [Installation](#installation)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Real time segmentation](#realtime-segmentation)
 
 ---
 
@@ -39,10 +37,6 @@ For this project, the **YOLO11n-seg** pretrained model is used. Refer to the off
 
 ---
 
-## Installation
+## Real time segmentation
 
-To set up the project locally, follow these steps:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-username/Image-Segmentation-and-Inpainting.git
