@@ -50,7 +50,7 @@ The following demonstrates **real-time human segmentation**, where objects in vi
 
 This section demonstrates **real-time inpainting**, where humans are detected in video frames and removed seamlessly.
 
-![Inpainting Example](images/RealTimeInpainting.gif "Inpainting Example")
+![Inpainting Example](Images/RealTimeInpainting.gif "Inpainting Example")
 
 ---
 
