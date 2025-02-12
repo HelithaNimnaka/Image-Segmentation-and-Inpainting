@@ -2,13 +2,15 @@
 
 This project focuses on **real-time human segmentation and inpainting**, designed to detect and remove humans from video frames.
 
-Instance segmentation goes beyond object detection by identifying individual objects in an image and segmenting them from the rest of the image. 
+## Semantic Segmentation
 
-The output of an instance segmentation model includes:
-- A set of masks or contours outlining each object in the image.
-- Class labels and confidence scores for each object.
+Semantic segmentation is a deep learning technique that classifies each pixel in an image into a specific category, allowing for a more detailed understanding of image content. Unlike instance segmentation, which differentiates between individual objects of the same class, semantic segmentation assigns the same label to all objects of the same category.
 
-Instance segmentation is particularly useful when you need to understand not only where objects are located in an image but also their exact shape.
+The output of a semantic segmentation model includes:
+- A pixel-wise mask where each pixel is assigned a class label.
+- No distinction between different instances of the same class.
+
+Semantic segmentation is particularly useful for tasks like background removal, scene understanding, and video inpainting.
 
 ---
 
@@ -19,6 +21,8 @@ Instance segmentation is particularly useful when you need to understand not onl
 - [Installation](#installation)
 - [Real-Time Segmentation](#real-time-segmentation)
 - [Real-Time Inpainting for Humans](#real-time-inpainting-for-humans)
+- [Inpainting Methods](#inpainting-methods)
+- [Use Case Reference](#use-case-reference)
 
 ---
 
@@ -40,7 +44,7 @@ For this project, the **YOLO11n-seg** pretrained model is used. Refer to the off
 
 ## Real-Time Segmentation
 
-The following demonstrates **real-time human segmentation**, where objects in video frames are detected and their contours are identified.
+The following demonstrates **real-time human segmentation**, where each pixel in video frames is classified into a category, helping to distinguish humans from the background.
 
 ![Segmentation Output](Images/Real_time_segmentation.gif "Segmentation Output")
 
@@ -50,7 +54,40 @@ The following demonstrates **real-time human segmentation**, where objects in vi
 
 This section demonstrates **real-time inpainting**, where humans are detected in video frames and removed seamlessly.
 
+We use **OpenCV's inpainting methods**, which include:
+- **Telea's Inpainting Algorithm (`cv2.INPAINT_TELEA`)** – Based on fast marching methods for smooth reconstruction.
+- **Navier-Stokes Based Inpainting (`cv2.INPAINT_NS`)** – Uses a fluid dynamics-based approach for structure propagation.
+
+Additionally, deep learning-based **inpainting models** can be integrated for higher-quality results, particularly for complex textures and larger missing regions.
+
 ![Inpainting Example](Images/RealTimeInpainting.gif "Inpainting Example")
+
+---
+
+## Inpainting Methods
+
+We employ **OpenCV's inpainting methods** and **deep learning-based inpainting models** to achieve high-quality results. Depending on the use case, different techniques can be applied:
+
+### 1. **OpenCV Inpainting**
+   - **Telea's Algorithm (`cv2.INPAINT_TELEA`)**  
+   - **Navier-Stokes Inpainting (`cv2.INPAINT_NS`)**
+
+### 2. **Deep Learning-Based Inpainting**
+   - GAN-based models (Generative Adversarial Networks)  
+   - Transformer-based inpainting  
+   - Context-aware inpainting networks  
+
+By combining these approaches, we can significantly improve **inpainting quality, restore missing regions seamlessly, and preserve background textures**.
+
+---
+
+## Use Case Reference
+
+Inpainting techniques have been widely used in various applications, including **Visual SLAM and signal enhancement**. A notable research paper on **GAN-based Image Inpainting** explores improving SLAM performance with inpainting:
+
+[📄 From Augmentation to Inpainting: Improving Visual SLAM with Signal Enhancement Techniques and GAN-based Image Inpainting](https://www.researchgate.net/publication/378914308_From_Augmentation_to_Inpainting_Improving_Visual_SLAM_with_Signal_Enhancement_Techniques_and_GAN-based_Image_Inpainting)
+
+This research demonstrates how **image inpainting can enhance robotic vision, scene understanding, and mapping quality**.
 
 ---
 
